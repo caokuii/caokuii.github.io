@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tags - Tag - Cao Kui&#39;s blog</title>
+        <link>http://caokuii.github.io/tags/</link>
+        <description>Tags - Tag - Cao Kui&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>3032264268@qq.com (Cao Kui)</managingEditor>
+            <webMaster>3032264268@qq.com (Cao Kui)</webMaster><lastBuildDate>Wed, 14 Dec 2022 10:05:01 &#43;0800</lastBuildDate><atom:link href="http://caokuii.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>emoji</title>
+    <link>http://caokuii.github.io/tags/emoji/</link>
+    <pubDate>Wed, 14 Dec 2022 10:05:01 &#43;0800</pubDate>
+    <author>Cao Kui</author>
+    <guid>http://caokuii.github.io/tags/emoji/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>
