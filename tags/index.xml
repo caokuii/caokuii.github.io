@@ -1,7 +1,23 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Tags - Tag - caokuii&#39;s</title>
+        <title>Tags - tag - caokuii&#39;s</title>
         <link>http://caokuii.github.io/tags/</link>
-        <description>Tags - Tag - caokuii&#39;s</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><atom:link href="http://caokuii.github.io/tags/" rel="self" type="application/rss+xml" /></channel>
+        <description>Tags - tag - caokuii&#39;s</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 11 Jan 2024 21:30:09 &#43;0800</lastBuildDate><atom:link href="http://caokuii.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>CS</title>
+    <link>http://caokuii.github.io/tags/cs/</link>
+    <pubDate>Thu, 11 Jan 2024 21:30:09 &#43;0800</pubDate>
+    <author>caokuii</author>
+    <guid>http://caokuii.github.io/tags/cs/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Java</title>
+    <link>http://caokuii.github.io/tags/java/</link>
+    <pubDate>Thu, 11 Jan 2024 21:30:09 &#43;0800</pubDate>
+    <author>caokuii</author>
+    <guid>http://caokuii.github.io/tags/java/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>

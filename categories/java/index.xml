@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Java - category - caokuii&#39;s</title>
+        <link>http://caokuii.github.io/categories/java/</link>
+        <description>Java - category - caokuii&#39;s</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 11 Jan 2024 21:30:09 &#43;0800</lastBuildDate><atom:link href="http://caokuii.github.io/categories/java/" rel="self" type="application/rss+xml" /><item>
+    <title>Second</title>
+    <link>http://caokuii.github.io/posts/second/</link>
+    <pubDate>Thu, 11 Jan 2024 21:30:09 &#43;0800</pubDate>
+    <author>caokuii</author>
+    <guid>http://caokuii.github.io/posts/second/</guid>
+    <description><![CDATA[这是第二篇文章 1 一级标题 1.1 二级标题 2 一级标题 3 一级标题]]></description>
+</item>
+</channel>
+</rss>

@@ -2,10 +2,15 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>http://caokuii.github.io/</loc><lastmod>2024-01-11T21:30:09&#43;08:00</lastmod></url><url>
+            <loc>http://caokuii.github.io/categories/</loc><lastmod>2024-01-11T21:30:09&#43;08:00</lastmod></url><url>
+            <loc>http://caokuii.github.io/tags/cs/</loc><lastmod>2024-01-11T21:30:09&#43;08:00</lastmod></url><url>
+            <loc>http://caokuii.github.io/categories/cs/</loc><lastmod>2024-01-11T21:30:09&#43;08:00</lastmod></url><url>
+            <loc>http://caokuii.github.io/tags/java/</loc><lastmod>2024-01-11T21:30:09&#43;08:00</lastmod></url><url>
+            <loc>http://caokuii.github.io/categories/java/</loc><lastmod>2024-01-11T21:30:09&#43;08:00</lastmod></url><url>
+            <loc>http://caokuii.github.io/posts/</loc><lastmod>2024-01-11T21:30:09&#43;08:00</lastmod></url><url>
+            <loc>http://caokuii.github.io/posts/second/</loc><lastmod>2024-01-11T21:30:09&#43;08:00</lastmod></url><url>
+            <loc>http://caokuii.github.io/tags/</loc><lastmod>2024-01-11T21:30:09&#43;08:00</lastmod></url><url>
             <loc>http://caokuii.github.io/friends/</loc><lastmod>2024-01-11T17:20:13&#43;08:00</lastmod></url><url>
             <loc>http://caokuii.github.io/about/</loc><lastmod>2024-01-11T17:18:31&#43;08:00</lastmod></url><url>
-            <loc>http://caokuii.github.io/</loc><lastmod>2024-01-10T21:14:09&#43;08:00</lastmod></url><url>
-            <loc>http://caokuii.github.io/posts/first/</loc><lastmod>2024-01-10T21:14:09&#43;08:00</lastmod></url><url>
-            <loc>http://caokuii.github.io/posts/</loc><lastmod>2024-01-10T21:14:09&#43;08:00</lastmod></url><url>
-            <loc>http://caokuii.github.io/categories/</loc></url><url>
-            <loc>http://caokuii.github.io/tags/</loc></url></urlset>
+            <loc>http://caokuii.github.io/posts/first/</loc><lastmod>2024-01-10T21:14:09&#43;08:00</lastmod></url></urlset>

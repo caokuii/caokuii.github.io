@@ -3,8 +3,8 @@ if(window.console) {
 	var cons = console; 
 	if(cons) { 
 		cons.group("O(∩_∩)O哈喽！");
-		cons.info("这位看代码的童鞋，不如留下你的友链来一起玩耍吧！8==D https://lewky.cn/friends/"); 
-		cons.log("%cYulin Lewis's Blog", "background-image: linear-gradient(#063053, #395873, #5c7c99);font-size: 2rem;");
+		cons.info("这位看代码的童鞋，不如留下你的友链来一起玩耍吧！8==D https://caokuii.github.io/friends/"); 
+		cons.log("%cCaokuii's Blog", "background-image: linear-gradient(#063053, #395873, #5c7c99);font-size: 2rem;");
 		cons.info("==============================此乃分界线==============================");
 		cons.log("  █████▒█    ██  ▄████▄   ██ ▄█▀       ██████╗ ██╗   ██╗ ██████╗\n▓██   ▒ ██  ▓██▒▒██▀ ▀█   ██▄█▒        ██╔══██╗██║   ██║██╔════╝\n▒████ ░▓██  ▒██░▒▓█    ▄ ▓███▄░        ██████╔╝██║   ██║██║  ███╗\n░▓█▒  ░▓▓█  ░██░▒▓▓▄ ▄██▒▓██ █▄        ██╔══██╗██║   ██║██║   ██║\n░▒█░   ▒▒█████▓ ▒ ▓███▀ ░▒██▒ █▄       ██████╔╝╚██████╔╝╚██████╔╝\n ▒ ░   ░▒▓▒ ▒ ▒ ░ ░▒ ▒  ░▒ ▒▒ ▓▒       ╚═════╝  ╚═════╝  ╚═════╝\n ░     ░░▒░ ░ ░   ░  ▒   ░ ░▒ ▒░\n ░ ░    ░░░ ░ ░ ░        ░ ░░ ░\n          ░     ░ ░      ░  ░\n")
 		cons.groupEnd();
@@ -62,11 +62,12 @@ jQuery(document).ready(function($) {
 /* 轮播背景图片 */
 $(function () {
 	$.backstretch([
-		  $cdnPrefix + "/images/background/DustInTheWind.jpg",
-		  $cdnPrefix + "/images/background/hamburger.jpg",
-		  $cdnPrefix + "/images/background/LoveLetter.jpg",
-          $cdnPrefix + "/images/background/SpiderMan1.jpg",
-          $cdnPrefix + "/images/background/TheLifeOf_PI2.jpg",
+		"/images/background/SpiderMan1.jpg",
+		"/images/background/TheLifeOf_PI2.jpg",
+		"/images/background/LoveLetter.jpg",
+		/*"/images/background/hamburger.jpg",
+		"/images/background/DustInTheWind.jpg",
+		*/
 	], { duration: 60000, fade: 1500 });
 });
 
