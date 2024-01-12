@@ -3,15 +3,23 @@
         <title>caokuii&#39;s</title>
         <link>http://caokuii.github.io/</link>
         <description>This is my cool site</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 11 Jan 2024 21:30:09 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 12 Jan 2024 20:02:09 &#43;0800</lastBuildDate>
             <atom:link href="http://caokuii.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Third</title>
+    <link>http://caokuii.github.io/posts/new-posts/third/</link>
+    <pubDate>Fri, 12 Jan 2024 20:02:09 &#43;0800</pubDate>
+    <author>caokuii</author>
+    <guid>http://caokuii.github.io/posts/new-posts/third/</guid>
+    <description><![CDATA[1111111]]></description>
+</item>
+<item>
     <title>Second</title>
     <link>http://caokuii.github.io/posts/second/</link>
     <pubDate>Thu, 11 Jan 2024 21:30:09 &#43;0800</pubDate>
     <author>caokuii</author>
     <guid>http://caokuii.github.io/posts/second/</guid>
-    <description><![CDATA[这是第二篇文章 1 一级标题 1.1 二级标题 2 一级标题 3 一级标题]]></description>
+    <description><![CDATA[这是第二篇文章 1 一级标题 1111 1.1 二级标题 11111 2 一级标题 11 3 一级标题 1111 PlantUML（Plant Unified Modeling Language）是一种开放源代码项目，它允许]]></description>
 </item>
 <item>
     <title>First</title>
