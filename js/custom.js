@@ -62,12 +62,26 @@ jQuery(document).ready(function($) {
 /* 轮播背景图片 */
 $(function () {
 	$.backstretch([
-		"/images/background/SpiderMan1.jpg",
+		"/images/background/plane.jpg",
+		"/images/background/YiYi.jpg",
 		"/images/background/TheLifeOf_PI2.jpg",
-		"/images/background/LoveLetter.jpg",
-		/*"/images/background/hamburger.jpg",
-		"/images/background/DustInTheWind.jpg",
-		*/
+		"/images/background/Beautiful Life.png",
+		"/images/background/Chungking Express.jpg",
+		"/images/background/Dust in the Wind.jpg",
+		"/images/background/Forrest Gump.jpg",
+		"/images/background/GodFather.jpg",
+		"/images/background/In the Mood for Love.jpg",
+		"/images/background/Kiki's Delivery Service.jpg",
+		"/images/background/La La Land.jpg",
+		"/images/background/Love Letter.jpg",
+		"/images/background/Mr. Donkey.jpg",
+		"/images/background/SpideMan3.jpg",
+		"/images/background/Spirited Away.jpg",
+		"/images/background/Suzume.jpg",
+		"/images/background/The Grand Budapest Hotel.jpg",
+		"/images/background/Totoro.jpg",
+		"/images/background/Up.jpg",
+		"/images/background/Your Name.jpg",
 	], { duration: 60000, fade: 1500 });
 });
 
