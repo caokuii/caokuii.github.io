@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Hugo搭建博客 - caokuii&#39;s</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="Hugo搭建博客" />
+<meta property="og:description" content="使用Hugo搭建个人博客，主题选用loveIt" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://caokuii.github.io/posts/hugo/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-01-13T12:58:47&#43;08:00" />
+<meta property="article:modified_time" content="2024-01-13T12:58:47&#43;08:00" /><meta property="og:site_name" content="My cool site" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo搭建博客"/>
+<meta name="twitter:description" content="使用Hugo搭建个人博客，主题选用loveIt"/>
+<meta name="application-name" content="caokuii">
+<meta name="apple-mobile-web-app-title" content="caokuii"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/images/logo.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://caokuii.github.io/posts/hugo/" /><link rel="next" href="http://caokuii.github.io/posts/git/git/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Hugo搭建博客",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/caokuii.github.io\/posts\/hugo\/"
+        },"genre": "posts","keywords": "Hugo","wordcount":  825 ,
+        "url": "http:\/\/caokuii.github.io\/posts\/hugo\/","datePublished": "2024-01-13T12:58:47+08:00","dateModified": "2024-01-13T12:58:47+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "caokuii"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="fixed"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <a href="https://github.com/caokuii" class="github-corner" target="_blank" title="Follow me on GitHub"
+            aria-label="Follow me on GitHub"><svg width="3.5rem" height="3.5rem" viewBox="0 0 250 250"
+                style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);"
+                aria-hidden="true">
+                <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                <path
+                    d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                    fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+                <path
+                    d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                    fill="currentColor" class="octo-body"></path>
+            </svg></a>
+        <div class="header-title">
+            <a href="/" title="caokuii&#39;s"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/logo.png"
+        data-srcset="/images/logo.png, /images/logo.png 1.5x, /images/logo.png 2x"
+        data-sizes="auto"
+        alt="/images/logo.png"
+        title="/images/logo.png" /></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item"
+                    href="/posts/" > 文章 
+                </a><a class="menu-item"
+                    href="/tags/" > 标签 
+                </a><a class="menu-item"
+                    href="/categories/" > 分类 
+                </a><a class="menu-item"
+                    href="/friends/" ><i class='fas fa-fw fa-fan fa-spin'></i> 友链 
+                </a><a class="menu-item"
+                    href="/about/" > 关于 
+                </a><span class="menu-item delimiter"></span></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="caokuii&#39;s"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/logo.png"
+        data-srcset="/images/logo.png, /images/logo.png 1.5x, /images/logo.png 2x"
+        data-sizes="auto"
+        alt="/images/logo.png"
+        title="/images/logo.png" /></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item"
+                href="/posts/" > 文章 
+            </a><a class="menu-item"
+                href="/tags/" > 标签 
+            </a><a class="menu-item"
+                href="/categories/" > 分类 
+            </a><a class="menu-item"
+                href="/friends/" ><i class='fas fa-fw fa-fan fa-spin'></i> 友链 
+            </a><a class="menu-item"
+                href="/about/" > 关于 
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title"></h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Hugo搭建博客</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>caokuii</a></span>&nbsp;<span class="post-category"></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar fa-fw"></i>&nbsp;<time datetime="2024-01-13">2024-01-13</time>&nbsp;<i class="far fa-calendar-plus fa-fw"></i>&nbsp;<time datetime="2024-01-13">2024-01-13</time>&nbsp;
+            </div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span></span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-hugo-部署命令">1 Hugo 部署命令</a>
+      <ul>
+        <li><a href="#11-启动本地网页">1.1 启动本地网页</a></li>
+        <li><a href="#12--生成静态页面命令">1.2  生成静态页面命令</a></li>
+        <li><a href="#13-创建文章">1.3 创建文章</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-美化与博客功能增强注意事项">2 美化与博客功能增强注意事项</a>
+      <ul>
+        <li><a href="#21-设置背景图轮播">2.1 设置背景图轮播</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-发布文章">3 发布文章</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>使用<a href="https://hugoloveit.com/zh-cn/" target="_blank" rel="noopener noreffer ">loveIt主题</a></p>
+<p>部分参考<a href="https://lewky.cn/categories/hugo%E7%B3%BB%E5%88%97/" target="_blank" rel="noopener noreffer ">雨临Lewis的博客</a></p>
+<h2 id="1-hugo-部署命令">1 Hugo 部署命令</h2>
+<h3 id="11-启动本地网页">1.1 启动本地网页</h3>
+<pre><code>hugo serve
+</code></pre><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240110230715771.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240110230715771.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240110230715771.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240110230715771.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240110230715771.png"
+        title="image-20240110230715771" /></p>
+<h3 id="12--生成静态页面命令">1.2  生成静态页面命令</h3>
+<pre><code>hugo -D
+</code></pre><p>默认会在站点根目录的<code>public/</code>目录下生成对应的静态页面，可以通过在命令行指定<code>-d</code>或者<code>--destination</code>参数来改变静态页面的存放路径，也可以通过在配置文件中设置<code>publishDir</code>来指定。</p>
+<p>该命令生成的静态页面文件是用来部署到pages服务的，比如GitHub pages或者Coding pages等。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240110225701681.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240110225701681.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240110225701681.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240110225701681.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240110225701681.png"
+        title="image-20240110225701681" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240110225721273.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240110225721273.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240110225721273.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240110225721273.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240110225721273.png"
+        title="image-20240110225721273" /></p>
+<h3 id="13-创建文章">1.3 创建文章</h3>
+<p>默认就是在content文件夹中创建文章</p>
+<pre><code>hugo new posts/first_post.md
+</code></pre><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240111212422398.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240111212422398.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240111212422398.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240111212422398.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240111212422398.png"
+        title="image-20240111212422398" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240111213026155.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240111213026155.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240111213026155.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240111213026155.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240111213026155.png"
+        title="image-20240111213026155" /></p>
+<h2 id="2-美化与博客功能增强注意事项">2 美化与博客功能增强注意事项</h2>
+<h3 id="21-设置背景图轮播">2.1 设置背景图轮播</h3>
+<p>这里使用的是文件夹中的图片，所以这里 JavaScript 文件与 <code>/images/background/saber1.jpg</code> 在同一目录中或者有相应的相对路径关系。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/* 轮播背景图片 */</span>
+<span style="color:#a6e22e">$</span>(<span style="color:#66d9ef">function</span> () {
+	<span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">backstretch</span>([
+		<span style="color:#e6db74">&#34;/images/background/SpiderMan1.jpg&#34;</span>,
+		<span style="color:#e6db74">&#34;/images/background/TheLifeOf_PI2.jpg&#34;</span>,
+		<span style="color:#e6db74">&#34;/images/background/LoveLetter.jpg&#34;</span>,
+		<span style="color:#75715e">/*&#34;/images/background/hamburger.jpg&#34;,
+</span><span style="color:#75715e">		&#34;/images/background/DustInTheWind.jpg&#34;,
+</span><span style="color:#75715e">		*/</span>
+	], { <span style="color:#a6e22e">duration</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">60000</span>, <span style="color:#a6e22e">fade</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1500</span> });
+});
+</code></pre></div><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240111211256514.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240111211256514.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240111211256514.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240111211256514.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240111211256514.png"
+        title="image-20240111211256514" /></p>
+<h2 id="3-发布文章">3 发布文章</h2>
+<ul>
+<li><strong>title</strong>: 文章标题.</li>
+<li><strong>subtitle</strong>: 文章副标题.</li>
+<li><strong>date</strong>: 这篇文章创建的日期时间. 它通常是从文章的前置参数中的 <code>date</code> 字段获取的, 但是也可以在网站配置中设置.</li>
+<li><strong>lastmod</strong>: 上次修改内容的日期时间.</li>
+<li><strong>draft</strong>: 如果设为 <code>true</code>, 除非 <code>hugo</code> 命令使用了 <code>--buildDrafts</code>/<code>-D</code> 参数, 这篇文章不会被渲染.</li>
+<li><strong>author</strong>: 文章作者.</li>
+<li><strong>authorLink</strong>: 文章作者的链接.</li>
+<li><strong>description</strong>: 文章内容的描述.</li>
+<li><strong>summary</strong>: 自定义文章摘要</li>
+<li><strong>license</strong>: 这篇文章特殊的许可.</li>
+<li><strong>tags</strong>: 文章的标签.</li>
+<li><strong>categories</strong>: 文章所属的类别.</li>
+<li><strong>hiddenFromHomePage</strong>: 如果设为 <code>true</code>, 这篇文章将不会显示在主页上, 但是此行为可以在网站配置 中设置的.</li>
+<li><strong>featuredImage</strong>: 文章的特色图片.</li>
+<li><strong>featuredImagePreview</strong>: 用在主页预览的文章特色图片.</li>
+<li><strong>toc</strong>: 如果设为 <code>true</code>, 这篇文章会显示右侧目录.</li>
+<li><strong>autoCollapseToc</strong>: 如果设为 <code>true</code>, 文章目录会自动折叠.</li>
+<li><strong>math</strong>: 如果设为 <code>true</code>, 将自动渲染文章中的数学公式.</li>
+<li><strong>mapbox</strong>: 和网站配置中的 <code>params.mapbox</code> 对象相同.</li>
+<li><strong>lightgallery</strong>: 如果设为 <code>true</code>, 文章中的图片将可以按照画廊形式呈现.</li>
+<li><strong>linkToMarkdown</strong>: 如果设为 <code>true</code>, 内容的页脚将显示指向原始 Markdown 文件的链接.</li>
+<li><strong>share</strong>: 和网站配置中的 <code>params.share</code> 对象相同.</li>
+<li><strong>comment</strong>: 如果设为 <code>true</code>, 将启用评论系统</li>
+</ul>
+<pre><code>---
+title: &quot;我的第一篇文章&quot;
+subtitle: &quot;&quot;
+date: 2020-03-04T15:58:26+08:00
+lastmod: 2020-03-04T15:58:26+08:00
+draft: true
+author: &quot;&quot;
+authorLink: &quot;&quot;
+description: &quot;&quot;
+license: &quot;&quot;
+images: []
+
+tags: []
+categories: []
+
+featuredImage: &quot;&quot;
+featuredImagePreview: &quot;&quot;
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+twemoji: false
+lightgallery: true
+ruby: true
+fraction: true
+fontawesome: true
+linkToMarkdown: true
+rssFullText: false
+
+toc:
+  enable: true
+  auto: true
+code:
+  copy: true
+  maxShownLines: 50
+math:
+  enable: false
+  # ...
+mapbox:
+  # ...
+share:
+  enable: true
+  # ...
+comment:
+  enable: true
+  # ...
+library:
+  css:
+    # someCSS = &quot;some.css&quot;
+    # 位于 &quot;assets/&quot;
+    # 或者
+    # someCSS = &quot;https://cdn.example.com/some.css&quot;
+  js:
+    # someJS = &quot;some.js&quot;
+    # 位于 &quot;assets/&quot;
+    # 或者
+    # someJS = &quot;https://cdn.example.com/some.js&quot;
+seo:
+  images: []
+  # ...
+---
+</code></pre></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span></span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title=" Twitter" data-sharer="twitter" data-url="http://caokuii.github.io/posts/hugo/" data-title="Hugo搭建博客" data-hashtags="Hugo"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title=" Facebook" data-sharer="facebook" data-url="http://caokuii.github.io/posts/hugo/" data-hashtag="Hugo"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title=" Hacker News" data-sharer="hackernews" data-url="http://caokuii.github.io/posts/hugo/" data-title="Hugo搭建博客"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title=" Line" data-sharer="line" data-url="http://caokuii.github.io/posts/hugo/" data-title="Hugo搭建博客"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title=" 微博" data-sharer="weibo" data-url="http://caokuii.github.io/posts/hugo/" data-title="Hugo搭建博客"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/hugo/">Hugo</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();"></a></span>&nbsp;|&nbsp;<span><a href="/"></a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+            <a href="/posts/git/git/" class="next" rel="next" title="Git">Git<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container">
+            <div class="footer-line">
+                <span id="run-time"></span>
+            </div><div class="footer-line">
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">caokuii</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js"></script>
+
+<script type="text/javascript" src="/js/custom.js"></script><script type="text/javascript" src="/js/custom.js"></script></body>
+</html>

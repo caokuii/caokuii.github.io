@@ -3,20 +3,28 @@
         <title>Categories - category - caokuii&#39;s</title>
         <link>http://caokuii.github.io/categories/</link>
         <description>Categories - category - caokuii&#39;s</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 11 Jan 2024 21:30:09 &#43;0800</lastBuildDate><atom:link href="http://caokuii.github.io/categories/" rel="self" type="application/rss+xml" /><item>
-    <title>CS</title>
-    <link>http://caokuii.github.io/categories/cs/</link>
-    <pubDate>Thu, 11 Jan 2024 21:30:09 &#43;0800</pubDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 13 Jan 2024 13:07:20 &#43;0800</lastBuildDate><atom:link href="http://caokuii.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Git</title>
+    <link>http://caokuii.github.io/categories/git/</link>
+    <pubDate>Sat, 13 Jan 2024 13:07:20 &#43;0800</pubDate>
     <author>caokuii</author>
-    <guid>http://caokuii.github.io/categories/cs/</guid>
+    <guid>http://caokuii.github.io/categories/git/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Java</title>
-    <link>http://caokuii.github.io/categories/java/</link>
-    <pubDate>Thu, 11 Jan 2024 21:30:09 &#43;0800</pubDate>
+    <title>版本控制</title>
+    <link>http://caokuii.github.io/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</link>
+    <pubDate>Sat, 13 Jan 2024 13:07:20 &#43;0800</pubDate>
     <author>caokuii</author>
-    <guid>http://caokuii.github.io/categories/java/</guid>
+    <guid>http://caokuii.github.io/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>博客</title>
+    <link>http://caokuii.github.io/categories/%E5%8D%9A%E5%AE%A2/</link>
+    <pubDate>Sat, 13 Jan 2024 12:58:47 &#43;0800</pubDate>
+    <author>caokuii</author>
+    <guid>http://caokuii.github.io/categories/%E5%8D%9A%E5%AE%A2/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

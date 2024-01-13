@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>博客 - category - caokuii&#39;s</title>
+        <link>http://caokuii.github.io/categories/%E5%8D%9A%E5%AE%A2/</link>
+        <description>博客 - category - caokuii&#39;s</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 13 Jan 2024 12:58:47 &#43;0800</lastBuildDate><atom:link href="http://caokuii.github.io/categories/%E5%8D%9A%E5%AE%A2/" rel="self" type="application/rss+xml" /><item>
+    <title>Hugo搭建博客</title>
+    <link>http://caokuii.github.io/posts/hugo/</link>
+    <pubDate>Sat, 13 Jan 2024 12:58:47 &#43;0800</pubDate>
+    <author></author>
+    <guid>http://caokuii.github.io/posts/hugo/</guid>
+    <description><![CDATA[使用Hugo搭建个人博客，主题选用loveIt]]></description>
+</item>
+</channel>
+</rss>

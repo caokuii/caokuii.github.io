@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Git - tag - caokuii&#39;s</title>
+        <link>http://caokuii.github.io/tags/git/</link>
+        <description>Git - tag - caokuii&#39;s</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 13 Jan 2024 13:07:20 &#43;0800</lastBuildDate><atom:link href="http://caokuii.github.io/tags/git/" rel="self" type="application/rss+xml" /><item>
+    <title>Git</title>
+    <link>http://caokuii.github.io/posts/git/git/</link>
+    <pubDate>Sat, 13 Jan 2024 13:07:20 &#43;0800</pubDate>
+    <author></author>
+    <guid>http://caokuii.github.io/posts/git/git/</guid>
+    <description><![CDATA[使用Git]]></description>
+</item>
+</channel>
+</rss>

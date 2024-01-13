@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Git - caokuii&#39;s</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="Git" />
+<meta property="og:description" content="使用Git" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://caokuii.github.io/posts/git/git/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-01-13T13:07:20&#43;08:00" />
+<meta property="article:modified_time" content="2024-01-13T13:07:20&#43;08:00" /><meta property="og:site_name" content="My cool site" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Git"/>
+<meta name="twitter:description" content="使用Git"/>
+<meta name="application-name" content="caokuii">
+<meta name="apple-mobile-web-app-title" content="caokuii"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/images/logo.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://caokuii.github.io/posts/git/git/" /><link rel="prev" href="http://caokuii.github.io/posts/hugo/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Git",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/caokuii.github.io\/posts\/git\/git\/"
+        },"genre": "posts","keywords": "Git","wordcount":  1528 ,
+        "url": "http:\/\/caokuii.github.io\/posts\/git\/git\/","datePublished": "2024-01-13T13:07:20+08:00","dateModified": "2024-01-13T13:07:20+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "caokuii"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="fixed"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <a href="https://github.com/caokuii" class="github-corner" target="_blank" title="Follow me on GitHub"
+            aria-label="Follow me on GitHub"><svg width="3.5rem" height="3.5rem" viewBox="0 0 250 250"
+                style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);"
+                aria-hidden="true">
+                <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                <path
+                    d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                    fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+                <path
+                    d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                    fill="currentColor" class="octo-body"></path>
+            </svg></a>
+        <div class="header-title">
+            <a href="/" title="caokuii&#39;s"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/logo.png"
+        data-srcset="/images/logo.png, /images/logo.png 1.5x, /images/logo.png 2x"
+        data-sizes="auto"
+        alt="/images/logo.png"
+        title="/images/logo.png" /></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item"
+                    href="/posts/" > 文章 
+                </a><a class="menu-item"
+                    href="/tags/" > 标签 
+                </a><a class="menu-item"
+                    href="/categories/" > 分类 
+                </a><a class="menu-item"
+                    href="/friends/" ><i class='fas fa-fw fa-fan fa-spin'></i> 友链 
+                </a><a class="menu-item"
+                    href="/about/" > 关于 
+                </a><span class="menu-item delimiter"></span></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="caokuii&#39;s"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/logo.png"
+        data-srcset="/images/logo.png, /images/logo.png 1.5x, /images/logo.png 2x"
+        data-sizes="auto"
+        alt="/images/logo.png"
+        title="/images/logo.png" /></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item"
+                href="/posts/" > 文章 
+            </a><a class="menu-item"
+                href="/tags/" > 标签 
+            </a><a class="menu-item"
+                href="/categories/" > 分类 
+            </a><a class="menu-item"
+                href="/friends/" ><i class='fas fa-fw fa-fan fa-spin'></i> 友链 
+            </a><a class="menu-item"
+                href="/about/" > 关于 
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title"></h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Git</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>caokuii</a></span>&nbsp;<span class="post-category"></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar fa-fw"></i>&nbsp;<time datetime="2024-01-13">2024-01-13</time>&nbsp;<i class="far fa-calendar-plus fa-fw"></i>&nbsp;<time datetime="2024-01-13">2024-01-13</time>&nbsp;
+            </div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span></span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-项目结构">1 项目结构</a>
+      <ul>
+        <li><a href="#11-关于git">1.1 关于.git</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-git-常用命令">2 Git 常用命令</a>
+      <ul>
+        <li><a href="#21-git本地仓库命令">2.1 Git本地仓库命令</a></li>
+        <li><a href="#22-git远程仓库命令">2.2 Git远程仓库命令</a></li>
+        <li><a href="#23-git分支命令">2.3 Git分支命令</a></li>
+        <li><a href="#24-标签命令">2.4 标签命令</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-在idea中使用git配置">3 在IDEA中使用Git配置</a>
+      <ul>
+        <li><a href="#31-获取git仓库">3.1 获取Git仓库</a></li>
+        <li><a href="#32-gitignore">3.2 gitignore</a></li>
+        <li><a href="#33-操作远程仓库">3.3 操作远程仓库</a></li>
+        <li><a href="#34-查看日志">3.4 查看日志</a></li>
+        <li><a href="#35-idea中远程仓库操作">3.5 IDEA中远程仓库操作</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-使用github-desktop">4 使用GitHub Desktop</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="1-项目结构">1 项目结构</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709151958778.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709151958778.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709151958778.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709151958778.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709151958778.png"
+        title="image-20230709151958778" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709152133914.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709152133914.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709152133914.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709152133914.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709152133914.png"
+        title="image-20230709152133914" /></p>
+<h3 id="11-关于git">1.1 关于.git</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709151753665.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709151753665.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709151753665.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709151753665.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709151753665.png"
+        title="image-20230709151753665" /></p>
+<h2 id="2-git-常用命令">2 Git 常用命令</h2>
+<h3 id="21-git本地仓库命令">2.1 Git本地仓库命令</h3>
+<p>本地仓库常用命令</p>
+<ul>
+<li>
+<p>git init 新建一个仓库</p>
+</li>
+<li>
+<p>git config &ndash;list 查看配置信息</p>
+</li>
+<li>
+<p>git config user.name 查看用户名</p>
+</li>
+<li>
+<p>git config user.email 查看邮箱地址</p>
+</li>
+<li>
+<p>git config &ndash;global user.name xxxx 设置用户名</p>
+</li>
+<li>
+<p>git config &ndash;global user.email xxxx 设置邮箱地址</p>
+</li>
+<li>
+<p>git status 查看文件状态</p>
+</li>
+<li>
+<p>git add 将文件的修改加入暂存区</p>
+</li>
+<li>
+<p>git reset 将暂存区的文件取消暂存或者是切换到指定版本</p>
+<ul>
+<li>git reset &ndash;hard 版本号回到指定版本</li>
+</ul>
+</li>
+<li>
+<p>git commit -m [message] 文件名 将暂存区的文件修改提交到版本库</p>
+<ul>
+<li>
+<p>[message] 可以是一些备注信息</p>
+</li>
+<li>
+<p>使用 git add 命令将内容写入暂存区，git commit 命令将暂存区内容添加到本地仓库中</p>
+</li>
+<li>
+<p>git commit -a <strong>-a</strong> 参数设置修改文件后不需要执行 git add 命令，直接来提交</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709153335964.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709153335964.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709153335964.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709153335964.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709153335964.png"
+        title="image-20230709153335964" /></p>
+</li>
+</ul>
+</li>
+<li>
+<p>git log 查看日志</p>
+</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709152249206.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709152249206.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709152249206.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709152249206.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709152249206.png"
+        title="image-20230709152249206" /></p>
+<h3 id="22-git远程仓库命令">2.2 Git远程仓库命令</h3>
+<ul>
+<li>
+<p>git remote 查看远程仓库，可以查看已经关联到的远程仓库的信息。如果使用git init创建本地仓库的话，需要关联远程仓库之后才能使用该命令查到远程仓库的信息</p>
+</li>
+<li>
+<p>git remote -v 可以查看远程仓库的详细信息</p>
+</li>
+<li>
+<p>git remote add添加远程仓库</p>
+<ul>
+<li>git remote add <code>shortname</code> <code>url</code>，可以使用该命令给在本地创建的仓库进行关联远程仓库，shortname一般使用origin，url使用远程仓库的url</li>
+</ul>
+</li>
+<li>
+<p>git clone url 从远程仓库克隆</p>
+</li>
+<li>
+<p>git pull 从远程仓库获取最新版本合并到本地仓库</p>
+<ul>
+<li>git pull [shortname] [branck-name]</li>
+</ul>
+</li>
+<li>
+<p>git push 推送到远程仓库</p>
+<ul>
+<li>
+<p>git push <code>remote-name</code> <code>branch-name</code></p>
+<p>git push origin master一般使用这个</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709163041542.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709163041542.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709163041542.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709163041542.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709163041542.png"
+        title="image-20230709163041542" /></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="23-git分支命令">2.3 Git分支命令</h3>
+<p>分支是Git使用过程中很重要的概念，使用分支意味着可以把工作从开发主线上分离开来，以免影响开发主线，同一个仓库可以有多个分支，各个分支相互独立，互不干扰。通过git init命令创建本地仓库时默认会创建一个master分支</p>
+<p>常用命令：</p>
+<ul>
+<li>
+<p>git branch 查看分支</p>
+<ul>
+<li>git branch 列出本地所有分支</li>
+<li>git branch -r 列出所有远程分支</li>
+<li>git branch -a 列出本地分支和远程分支</li>
+</ul>
+</li>
+<li>
+<p>git branch <code>name</code> 创建分支</p>
+</li>
+<li>
+<p>git checkout <code>name</code> 切换分支</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709170340877.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709170340877.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709170340877.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709170340877.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709170340877.png"
+        title="image-20230709170340877" /></p>
+</li>
+<li>
+<p>git push <code>shortname</code> <code>name</code> 推送至远程仓库分支，shortname是远程仓库的别名，name是分支名</p>
+</li>
+<li>
+<p>git merge <code>其他分支名</code> 合并分支</p>
+</li>
+<li>
+<p>git fetch  获取远程所有分支到本地</p>
+</li>
+</ul>
+<h3 id="24-标签命令">2.4 标签命令</h3>
+<ul>
+<li>git tag 列出已有的标签</li>
+<li>git tag <code>name</code> 创建标签</li>
+<li>git push <code>shortname</code> <code>name</code> 将标签推送到远程仓库，这里的shortname指的是仓库别名，name指的是标签名</li>
+<li>git checkout -b <code>branch</code> <code>name</code> 检出标签，这里的name也是指的是标签名</li>
+</ul>
+<h2 id="3-在idea中使用git配置">3 在IDEA中使用Git配置</h2>
+<h3 id="31-获取git仓库">3.1 获取Git仓库</h3>
+<h4 id="311-本地初始化仓库">3.1.1 本地初始化仓库</h4>
+<p>未初始化的Git项目导航栏会有一个VCS栏，然后<code>create Git Repository</code>即可创建本地Git项目</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709213444346.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709213444346.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709213444346.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709213444346.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709213444346.png"
+        title="image-20230709213444346" /></p>
+<p>之后导航栏就变成了下面这个样子</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709213037378.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709213037378.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709213037378.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709213037378.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709213037378.png"
+        title="image-20230709213037378" /></p>
+<h4 id="312-从远程仓库克隆">3.1.2 从远程仓库克隆</h4>
+<p>还是在VCS导航栏中，<code>Get from Version Control</code>，然后输入项目的url地址即可将远程仓库clone到本地</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709213515273.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709213515273.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709213515273.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709213515273.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709213515273.png"
+        title="image-20230709213515273" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709213617293.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709213617293.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709213617293.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709213617293.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709213617293.png"
+        title="image-20230709213617293" /></p>
+<p>或者选择close project退出项目，在IDEA首页选择克隆</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714162453071.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714162453071.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714162453071.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714162453071.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714162453071.png"
+        title="image-20230714162453071" /></p>
+<h3 id="32-gitignore">3.2 gitignore</h3>
+<p>在根目录下</p>
+<p>git忽略文件：</p>
+<ul>
+<li>忽略操作系统自动生成的文件，比如缩略图等；</li>
+<li>忽略编译生成的中间文件、可执行文件等，也就是如果一个文件是通过另一个文件自动生成的，那自动生成的文件就没必要放进版本库，比如产生的.log日志文件；</li>
+<li>忽略你自己的带有敏感信息的配置文件，比如存放口令的配置文件。</li>
+</ul>
+<p>创建仓库时可以选择自动生成gitignore文件</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709214641230.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709214641230.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709214641230.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709214641230.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230709214641230.png"
+        title="image-20230709214641230" /></p>
+<h3 id="33-操作远程仓库">3.3 操作远程仓库</h3>
+<p>在idea里面可以省去add提交命令，可以commit执行add和commit操作</p>
+<ul>
+<li>新建文件需要加入暂存区，可以选中指定文件加入暂存区即add命令
+<ul>
+<li>新建文件未加入缓存区是红色的</li>
+<li>新建文件执行add之后是绿色的</li>
+</ul>
+</li>
+<li>commit 提交√
+<ul>
+<li>commit之后，绿色就会变成正常文件的颜色</li>
+</ul>
+</li>
+<li>push</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165001351.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165001351.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165001351.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165001351.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165001351.png"
+        title="image-20230714165001351" /></p>
+<p>poll, commit, push</p>
+<h3 id="34-查看日志">3.4 查看日志</h3>
+<p>下面这个时钟的标志Show History可以显示日志</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165102926.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165102926.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165102926.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165102926.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165102926.png"
+        title="image-20230714165102926" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165154441.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165154441.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165154441.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165154441.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165154441.png"
+        title="image-20230714165154441" /></p>
+<p>可以显示前后对比</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165429320.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165429320.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165429320.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165429320.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165429320.png"
+        title="image-20230714165429320" /></p>
+<h3 id="35-idea中远程仓库操作">3.5 IDEA中远程仓库操作</h3>
+<ul>
+<li>
+<p>查看远程仓库</p>
+<p>git栏中的Manage Remotes，可以查看远程仓库信息</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165810459.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165810459.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165810459.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165810459.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165810459.png"
+        title="image-20230714165810459" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165702558.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165702558.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165702558.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165702558.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714165702558.png"
+        title="image-20230714165702558" /></p>
+<p>可以在这里选择取消关联远程仓库</p>
+</li>
+<li>
+<p>push</p>
+<p>选择push推送，可以将本地仓库内容推送到远程仓库中</p>
+<p>下面的意思是本地仓库的master分支推送到远程仓库的origin的master分支</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714170041194.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714170041194.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714170041194.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714170041194.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20230714170041194.png"
+        title="image-20230714170041194" /></p>
+</li>
+<li>
+<p>从远程仓库中pull下拉到本地仓库</p>
+<p>可以从git栏中选择Pull选项</p>
+<p><!-- raw HTML omitted --></p>
+</li>
+</ul>
+<h2 id="4-使用github-desktop">4 使用GitHub Desktop</h2>
+<p>简单又实用</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240113131316377.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240113131316377.png, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240113131316377.png 1.5x, https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240113131316377.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/caokuii/pictures@master/markdown/image-20240113131316377.png"
+        title="image-20240113131316377" /></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span></span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title=" Twitter" data-sharer="twitter" data-url="http://caokuii.github.io/posts/git/git/" data-title="Git" data-hashtags="Git"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title=" Facebook" data-sharer="facebook" data-url="http://caokuii.github.io/posts/git/git/" data-hashtag="Git"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title=" Hacker News" data-sharer="hackernews" data-url="http://caokuii.github.io/posts/git/git/" data-title="Git"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title=" Line" data-sharer="line" data-url="http://caokuii.github.io/posts/git/git/" data-title="Git"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title=" 微博" data-sharer="weibo" data-url="http://caokuii.github.io/posts/git/git/" data-title="Git"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/git/">Git</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();"></a></span>&nbsp;|&nbsp;<span><a href="/"></a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/hugo/" class="prev" rel="prev" title="Hugo搭建博客"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Hugo搭建博客</a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container">
+            <div class="footer-line">
+                <span id="run-time"></span>
+            </div><div class="footer-line">
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">caokuii</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js"></script>
+
+<script type="text/javascript" src="/js/custom.js"></script><script type="text/javascript" src="/js/custom.js"></script></body>
+</html>
