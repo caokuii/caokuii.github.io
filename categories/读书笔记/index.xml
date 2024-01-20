@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>读书笔记 - category - caokuii&#39;s</title>
+        <link>http://caokuii.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+        <description>读书笔记 - category - caokuii&#39;s</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 21 Jan 2024 00:16:34 &#43;0800</lastBuildDate><atom:link href="http://caokuii.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" rel="self" type="application/rss+xml" /><item>
+    <title>人文社科读书笔记</title>
+    <link>http://caokuii.github.io/posts/books/reader/</link>
+    <pubDate>Sun, 21 Jan 2024 00:16:34 &#43;0800</pubDate>
+    <author></author>
+    <guid>http://caokuii.github.io/posts/books/reader/</guid>
+    <description><![CDATA[人文社科读书笔记]]></description>
+</item>
+</channel>
+</rss>
