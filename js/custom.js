@@ -19,8 +19,7 @@ function randomColor() {
 /* 鼠标点击文字特效 */
 var a_idx = 0;
 var a_click = 1;
-var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" 
-                ,"法治", "爱国", "敬业", "诚信", "友善");
+var a = new Array("人生", "自是", "有缘", "相逢", "未必", "偶然");
 jQuery(document).ready(function($) {
     $("body").click(function(e) {
 		/* 点击频率，点击几次就换文字 */
